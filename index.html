@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>thakur test</title>
+        
+              
+<style type="text/css">
+
+body.back{
+    
+    background-image: url('background.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+div.cities {
+    
+        text-align: center;
+
+
+    background-color: black;
+
+    color: white;
+
+    margin: 20px 0 20px 0;
+
+    padding: 20px;
+
+	opacity:0.8;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+p {
+    
+    margin: 0 0 0 250px;
+    text-align:justify;
+    letter-spacing: 3px;
+    
+}
+
+
+</style>
+
+        
+        
+    </head>
+    
+    
+
+    
+ 
+<body class="back" oncontextmenu="return false">
+    
+                        <div class="cities">     
+                            <h1><b> WELCOME TO SELF TEACHING QUESTIONNAIRE</b></h1>                                            
+                        </div>
+
+    
+    
+    
+        <div class="cities">     
+
+                                                <br><br>    
+                                                <h2><b><i><u>INSTRUCTIONS:</u></i></b></h2>
+
+                                                <br>
+                            <p>
+                                 1.Please ensure that system is not affected by malware/adware.<br><br>
+                                 2.Make sure your browser has pop-up window enabled.<br><br>
+                                 3.Please <b><u>DO NOT REFRESH YOUR EXAM PAGE</u></b> ,it will disrupt the exam activity.<br><br>
+                                 4.Ensure that there are no frequent connection drops. <br><br>
+                            <br><br>
+
+
+                                 </p>
+
+                                
+        </div>
+    
+        <div class="cities">     
+                      
+                                <br>
+
+                                    <form name="myForm">
+                                                <input type="checkbox" id="checked">I HAVE READ THE INSTRUCTIONS CAREFULLY.<br><br><br>
+                                                <input type="button" onclick="return popitup()" value="go to login page"> 
+                                     </form> 
+
+        </div>
+
+    <script language="javascript">    
+    
+       // document.myForm.submit();
+        function popitup() {
+            if(document.getElementById("checked").checked==true)
+           {
+                         var w = window.open("index.jsp",'newpop',
+                'menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,dependent,width=1300,height=600,left=0,top=0');
+                 return w?false:true; // allow the link to work if popup is blocked
+
+           }
+            else
+                alert('please check the box before going to login page!');
+         }
+</script>
+
+
+</body>
+</html>
